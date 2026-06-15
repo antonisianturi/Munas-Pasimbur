@@ -112,6 +112,10 @@ tfoot{display:table-footer-group}
 tr,td,th{page-break-inside:avoid;page-break-after:auto}
 thead th{background:#1F4E78!important;color:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;font-size:10pt!important;padding:6px 8px!important}
 tbody td{font-size:10pt!important;padding:5px 8px!important;color:#000!important}
+/* === PATCH: Reset zebra stripe agar tidak hitam saat print di dark mode === */
+tbody tr{background:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+tbody tr:nth-child(even){background:#F9F9F9!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+tbody tr:hover{background:#fff!important}
 tfoot td{background:#E3F2FD!important;color:#000!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;font-size:10pt!important;padding:6px 8px!important}
 .footer{font-size:8pt!important;margin-top:16px!important;padding-top:8px!important;color:#666!important}
 svg text{fill:#000!important}
@@ -121,6 +125,9 @@ body.printing .container{box-shadow:none!important;background:#fff!important}
 body.printing .actions,body.printing .search-box,body.printing .status-bar,body.printing .banner,body.printing .setup-form,body.printing .period-filter,body.printing #btnInstall{display:none!important}
 body.printing .card{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
 body.printing thead th{background:#1F4E78!important;color:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+body.printing tbody tr{background:#fff!important;-webkit-print-color-adjust:exact!important}
+body.printing tbody tr:nth-child(even){background:#F9F9F9!important;-webkit-print-color-adjust:exact!important}
+body.printing tbody td{color:#000!important;background:transparent!important}
 body.printing tfoot td{background:#E3F2FD!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
 body.printing .chart-box{page-break-inside:avoid;background:#fff!important;border:1px solid #999!important}
 body.printing .section{page-break-inside:avoid}
