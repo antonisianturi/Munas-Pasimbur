@@ -1,25 +1,21 @@
 {
   "name": "Dashboard PASIMBUR",
   "short_name": "PASIMBUR",
-  "description": "Dashboard Keuangan PASIMBUR - Parsadaan Sianturi Simangonding",
-  "start_url": "./Dashboard_PASIMBUR_Final.html",
-  "scope": "./",
+  "start_url": "/Munas-Pasimbur/",
+  "scope": "/Munas-Pasimbur/",
   "display": "standalone",
-  "orientation": "any",
-  "background_color": "#F5F5F5",
+  "background_color": "#1F4E78",
   "theme_color": "#1F4E78",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "/Munas-Pasimbur/logo.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
-      "src": "logo.png",
+      "src": "/Munas-Pasimbur/logo.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
